@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다-->
         <activity android:name=".SecondActivity"
             android:launchMode="singleInstance"></activity>
         <activity android:name=".MainActivity"
