@@ -5,60 +5,148 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="15"
+8        android:minSdkVersion="23"
 8-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:5:5-27:19
-12        android:allowBackup="true"
-12-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:11:9-40
-21
-22        <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다 -->
-23        <activity
-23-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:9-14:50
-24            android:name="com.basic.appjam.MemoEdit"
-24-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:19-43
-25            android:launchMode="singleInstance" />
-25-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:14:13-48
-26        <activity
-26-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:9-16:60
-27            android:name="com.basic.appjam.MemoDetail"
-27-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:19-45
-28            android:launchMode="singleInstance" />
-28-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:16:13-48
-29        <activity
-29-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:9-25:20
-30            android:name="com.basic.appjam.MainActivity"
-30-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:19-47
-31            android:launchMode="singleInstance" >
-31-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:18:13-48
-32            <intent-filter>
-32-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:20:13-24:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:17-69
-33-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:17-76
-35-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:27-74
-36            </intent-filter>
-37        </activity>
-38    </application>
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[io.realm:realm-android-library-object-server:4.3.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\769a47da3e6d68b96805e6d3ae5976b6\jetified-realm-android-library-object-server-4.3.1\AndroidManifest.xml:10:5-79
+13-->[io.realm:realm-android-library-object-server:4.3.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\769a47da3e6d68b96805e6d3ae5976b6\jetified-realm-android-library-object-server-4.3.1\AndroidManifest.xml:10:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[io.realm:realm-android-library-object-server:4.3.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\769a47da3e6d68b96805e6d3ae5976b6\jetified-realm-android-library-object-server-4.3.1\AndroidManifest.xml:11:5-67
+14-->[io.realm:realm-android-library-object-server:4.3.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\769a47da3e6d68b96805e6d3ae5976b6\jetified-realm-android-library-object-server-4.3.1\AndroidManifest.xml:11:22-64
+15
+16    <uses-feature
+16-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:11:5-13:35
+17        android:glEsVersion="0x00020000"
+17-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:12:9-41
+18        android:required="true" />
+18-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:13:9-32
+19    <uses-feature
+19-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:14:5-16:36
+20        android:name="android.hardware.wifi"
+20-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:15:9-45
+21        android:required="false" />
+21-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:16:9-33
+22
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:20:5-76
+23-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:20:22-73
+24
+25    <application
+25-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:8:5-35:19
+26        android:name="com.basic.appjam.MyApplication"
+26-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:14:9-38
+27        android:allowBackup="true"
+27-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:9:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.2.0-rc01] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\0114ba58eaa8e62b16714c6d78986bbe\core-1.2.0-rc01\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:10:9-43
+31        android:label="@string/app_name"
+31-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:11:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:12:9-54
+33        android:supportsRtl="true"
+33-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:9-40
+36        <meta-data
+36-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:16:9-18:42
+37            android:name="com.naver.maps.map.CLIENT_ID"
+37-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:13-56
+38            android:value="7k5c34qnyp" />
+38-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:18:13-39
 39
-40</manifest>
+40        <activity
+40-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:9-22:50
+41            android:name="com.basic.appjam.MemoEdit"
+41-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:19-43
+42            android:launchMode="singleInstance" />
+42-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:22:13-48
+43        <activity
+43-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:9-24:60
+44            android:name="com.basic.appjam.MemoDetail"
+44-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:19-45
+45            android:launchMode="singleInstance" />
+45-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:24:13-48
+46        <activity
+46-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:25:9-33:20
+47            android:name="com.basic.appjam.MainActivity"
+47-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:25:19-47
+48            android:launchMode="singleInstance" >
+48-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:26:13-48
+49            <intent-filter>
+49-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:28:13-32:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:29:17-69
+50-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:29:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:31:17-76
+52-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:31:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:23:9-27:51
+56            android:name="com.naver.maps.map.app.LegendActivity"
+56-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:24:13-65
+57            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+57-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:25:13-91
+58            android:label="@string/navermap_legend"
+58-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:26:13-52
+59            android:theme="@style/navermap_app" />
+59-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:27:13-48
+60        <activity
+60-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:28:9-32:51
+61            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+61-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:29:13-70
+62            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+62-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:30:13-91
+63            android:label="@string/navermap_legal_notice"
+63-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:31:13-58
+64            android:theme="@style/navermap_app" />
+64-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:32:13-48
+65        <activity
+65-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:33:9-37:51
+66            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+66-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:34:13-76
+67            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+67-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:35:13-91
+68            android:label="@string/navermap_open_source_license"
+68-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:36:13-65
+69            android:theme="@style/navermap_app" />
+69-->[com.naver.maps:map-sdk:3.6.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\532ebb5757880a2a346badd12d08becb\jetified-map-sdk-3.6.0\AndroidManifest.xml:37:13-48
+70        <activity
+70-->[gun0912.ted:tedpermission:2.0.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bd4a33eb40d875ea3b25187ac4ecf3c3\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
+71            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+71-->[gun0912.ted:tedpermission:2.0.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bd4a33eb40d875ea3b25187ac4ecf3c3\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75
+72            android:theme="@style/Theme.Transparent.Permission" />
+72-->[gun0912.ted:tedpermission:2.0.0] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bd4a33eb40d875ea3b25187ac4ecf3c3\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
+73        <activity
+73-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\9c81f22c906c73cb476ea89fc25346f3\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+74            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+74-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\9c81f22c906c73cb476ea89fc25346f3\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+75            android:exported="false"
+75-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\9c81f22c906c73cb476ea89fc25346f3\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\9c81f22c906c73cb476ea89fc25346f3\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+77
+78        <meta-data
+78-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bf0cd07ca14bfbb061edae14b49c7bcc\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+79            android:name="com.google.android.gms.version"
+79-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bf0cd07ca14bfbb061edae14b49c7bcc\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+80            android:value="@integer/google_play_services_version" />
+80-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jiin2\.gradle\caches\transforms-2\files-2.1\bf0cd07ca14bfbb061edae14b49c7bcc\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+81    </application>
+82
+83</manifest>

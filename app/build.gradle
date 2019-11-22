@@ -1,11 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.basic.appjam"
-        minSdkVersion 15
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -26,4 +31,19 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.60"
+    implementation 'com.naver.maps:map-sdk:3.6.0'
+    implementation 'gun0912.ted:tedpermission:2.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
 }
+repositories {
+    mavenCentral()
+}
+realm {
+    syncEnabled = true
+    //아래의 코드는 kotlin extension 사용 시 추가
+    kotlinExtensionsEnabled = true
+}
+

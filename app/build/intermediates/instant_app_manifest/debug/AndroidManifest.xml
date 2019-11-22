@@ -6,10 +6,25 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="23"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
+        android:name="com.basic.appjam.MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -19,8 +34,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="7k5c34qnyp" />
 
-        <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다 -->
         <activity
             android:name="com.basic.appjam.MemoEdit"
             android:launchMode="singleInstance" />
@@ -36,6 +53,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.naver.maps.map.app.LegendActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/navermap_legend"
+            android:theme="@style/navermap_app" />
+        <activity
+            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/navermap_legal_notice"
+            android:theme="@style/navermap_app" />
+        <activity
+            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/navermap_open_source_license"
+            android:theme="@style/navermap_app" />
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:theme="@style/Theme.Transparent.Permission" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
