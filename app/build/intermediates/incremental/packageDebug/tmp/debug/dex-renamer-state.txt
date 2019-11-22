@@ -1,4 +1,4 @@
-#Thu Nov 21 15:47:13 KST 2019
-base.0=C\:\\Users\\works\\AndroidStudioProjects\\asd\\AppJam\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Fri Nov 22 21:11:49 KST 2019
+base.0=C\:\\Users\\jiin2\\AndroidStudioProjects\\AppJam\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -18,8 +18,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+
+        <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다 -->
         <activity
-            android:name="com.basic.appjam.SecondActivity"
+            android:name="com.basic.appjam.MemoDetail"
             android:launchMode="singleInstance" />
         <activity
             android:name="com.basic.appjam.MainActivity"

@@ -650,9 +650,6 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
-id IntroImage
-id IntroLayout
-id IntroText
 id META
 id SHIFT
 id SYM
@@ -680,14 +677,11 @@ id alertTitle
 id all
 id always
 id async
+id back
 id barrier
 id beginning
 id blocking
 id bottom
-id button1
-id button2
-id button3
-id button4
 id buttonPanel
 id center
 id center_horizontal
@@ -725,7 +719,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
 id info
 id invisible
 id italic
@@ -734,6 +727,7 @@ id line1
 id line3
 id listMode
 id list_item
+id memo
 id message
 id middle
 id multiply
@@ -753,6 +747,7 @@ id radio
 id right
 id right_icon
 id right_side
+id save
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -791,8 +786,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView1
-id textView2
 id time
 id title
 id titleDividerNoCustom
@@ -839,8 +832,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout activity_second
-layout layout_intro
+layout memo_detail
+layout memo_edit
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
