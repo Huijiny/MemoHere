@@ -22,6 +22,9 @@
 
         <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다 -->
         <activity
+            android:name="com.basic.appjam.MemoEdit"
+            android:launchMode="singleInstance" />
+        <activity
             android:name="com.basic.appjam.MemoDetail"
             android:launchMode="singleInstance" />
         <activity

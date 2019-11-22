@@ -11,7 +11,7 @@
 9-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:5:5-23:19
+11-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:5:5-27:19
 12        android:allowBackup="true"
 12-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,28 +31,34 @@
 21
 22        <!-- android:launchMode="singleInstance" 를 적으면 액티비티가 싱클톤이된다 -->
 23        <activity
-23-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:9-14:60
-24            android:name="com.basic.appjam.MemoDetail"
-24-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:19-45
+23-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:9-14:50
+24            android:name="com.basic.appjam.MemoEdit"
+24-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:13:19-43
 25            android:launchMode="singleInstance" />
 25-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:14:13-48
 26        <activity
-26-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:9-22:20
-27            android:name="com.basic.appjam.MainActivity"
-27-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:19-47
-28            android:launchMode="singleInstance" >
+26-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:9-16:60
+27            android:name="com.basic.appjam.MemoDetail"
+27-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:15:19-45
+28            android:launchMode="singleInstance" />
 28-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:16:13-48
-29            <intent-filter>
-29-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:13-21:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:18:17-69
-30-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:18:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:20:17-76
-32-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:20:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+29        <activity
+29-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:9-25:20
+30            android:name="com.basic.appjam.MainActivity"
+30-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:17:19-47
+31            android:launchMode="singleInstance" >
+31-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:18:13-48
+32            <intent-filter>
+32-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:20:13-24:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:17-69
+33-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:21:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:17-76
+35-->C:\Users\jiin2\AndroidStudioProjects\AppJam\app\src\main\AndroidManifest.xml:23:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

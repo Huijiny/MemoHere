@@ -13,6 +13,9 @@ public class MemoEdit  extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.memo_edit);
+
+        back = findViewById(R.id.back);
+        save = findViewById(R.id.save);
         back.setOnClickListener(this);
         save.setOnClickListener(this);
     }
@@ -21,7 +24,7 @@ public class MemoEdit  extends AppCompatActivity implements View.OnClickListener
         switch (v.getId()){
             case R.id.back:
                 finish();
-                break;
+             break;
             case R.id.save:
                 //Realm에 저장하기
         }
